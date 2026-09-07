@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Corvin Collection</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #12213d;
+            color: #eee8dc;
+        }
+
+        .rule {
+            display: block;
+            width: 100%;
+            height: 3px;
+            margin-top: 18px;
+            opacity: 0.45;
+        }
+
+        header{
+            background: #0b1629;
+            padding: 14px 4vw;
+        }
+        
+        header h1 {
+            font-size: 22px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .title{
+            background: #000;
+            padding: 30px;
+            max-width: 440px;
+
+        }
+
+        .title h1{
+            font-size: 44px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .sub{
+            color: #c8102e;
+            font-size: 26px;
+            margin: 6px 0 16px;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #c9c2b2;
+            margin: 4px 0 0;
+            max-width: 60ch;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure h3{
+            font-weight: normal;
+            font-size: 18px;
+            margin: 0 0 8px;
+        }
+
+        figure p {
+            font-size: 14px;
+            color: #c9c2b2;
+        }
+
+        footer {
+            background: #0b1629;
+            padding: 10px 4vw;
+            font-size: 12px;
+            color: #c9c2b2;
+        }
+
+        html, body {
+            height: 100%;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            flex: 1;
+            padding: 4vh 4vw;
+            display:grid;
+            grid-template-columns: 5fr 7fr;
+            gap: 4vw;
+            align-items: center;
+        }
+
+        .objects{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.4vw;
+        }
+
+        .obj{
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: #cfcabb;
+            box-shadow: 0 18px 36px rgba(0,0,0,0.45);
+            display: grid;
+            place-items: center;
+            font-size: 36px;
+            color: #3a3a3a;
+            margin-bottom: 14px;
+            object-fit: cover;
+            object-position: 15% 15%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .blade{
+            object-fit: contain;
+            padding: 10%;
+            background: #e6e6e6;
+            filer: brightness(0.92);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The MHS Museum</h1>
+        <p>The MHS Museum has opened a small exhibition. The curator knows who it is about, and has left his name in three places for those who look.</p>
+    </header>
+
+    <main>
+        <div class="title">
+            <h1>An Ending in Summer</h1>
+            <p class="sub">Three objects, one morning</p>
+
+            <p>Exhibition / 14 September - 9 October 2026</p>
+            <svg class="rule" aria-hidden="true">
+                <line x1="0" y1="1.5" x2="100%" y2="1.5" stroke="#7d93c0" stroke-width="1"
+                        stroke-dasharray="2 3 2 3 2 3 2 9 2 21 8 3 2 3 2 9 2 3 2 9 2 9 8 3 2 3 2 21 8 3 8 3 8 9 8 3 2 90"/>
+            </svg>
+
+        </div>
+
+        <div class="objects">
+            <figure>
+
+                <img class="obj" src="cockade.jpg" alt="">
+                <p class="no">CC.17</p>
+                <h3>Cockade, tricolour silk</h3>
+                <p>Silk, three colours, worn on the hat. Pinned on for the Bastille and never quite taken off.</p>
+            
+            </figure>
+
+            <figure>
+
+                <img class="obj" src="calendar.jpg" alt="">
+                <p class="no">CC.9</p>
+                <h3>Calendar, printed on paper, Paris</h3>
+                <p>The Republic remade the year: twelve months of thirty days, named after the weather and the harvest. Vendémiaire, Brumaire, Thermidor, Frimaire, Fructidor. Each day given a name of its own. It lasted twelve years.</p>
+
+            </figure>
+
+            <figure>
+                <img class="obj blade" src="guillotine blade.jpg" alt="">
+                <p class="no">CC.4</p>
+                <h3>Guillotine blade, iron, weighted</h3>
+                <p>The machine was proposed by a physician as a mercy and adopted by an assembly as a policy. It stood in the Place de la Révolution for most of the Terror and was last used there on the tenth day of the month of heat. This blade was retired unsharpened.</p>
+                
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>Objects shown by arrangement with their lenders</p>
+    </footer>
+
+</body>
+</html>
